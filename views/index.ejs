@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather by Esrom</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles_enhanced.css">
+</head>
+<body>
+    <div class="container">
+        <div class="weather-card">
+            <h1>Weather app <br><span>by Esrom Tesfaye</span></h1>
+
+            <% if (locals.error) { %>
+                <div class="error-message"><%= error %></div>
+            <% } %>
+
+            <form action="/" method="POST" class="search-form">
+                <input type="text" placeholder="Enter City..." name="input" required>
+                <button type="submit">Go</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

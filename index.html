@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather by Esrom</title>
+    <!-- Google Fonts for a professional look -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="weather-card">
+            <h1>Weather app <br><span>by Esrom Tesfaye</span></h1>
+            
+            <form action="/" method="POST" class="search-form">
+                <input type="text" placeholder="Enter City..." name="input" required>
+                <button type="submit">Go</button>
+            </form>
+
+            <!-- This area is where you can display the results from your Express backend -->
+            <div class="weather-result">
+                <!-- Example of what your backend should render here: -->
+                <!-- <h2>London</h2> <h3>22°C</h3> <p>Cloudy</p> -->
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

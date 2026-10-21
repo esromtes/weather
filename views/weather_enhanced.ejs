@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Result | Esrom</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles_enhanced.css">
+</head>
+<body class="result-body">
+    <div class="container">
+        <div class="weather-card result-card">
+            <p class="city-label">Current Weather in</p>
+            <h1 class="city-name"><%= city %></h1>
+
+            <div class="main-weather">
+                <img src="<%= iconUrl %>" alt="<%= description %>" class="weather-icon">
+                <div class="temp-container">
+                    <span class="temp-value"><%= temp %>°C</span>
+                    <p class="weather-desc"><%= description %></p>
+                </div>
+            </div>
+
+            <div class="weather-details">
+                <div class="detail-item">
+                    <span class="detail-label">Feels Like</span>
+                    <span class="detail-value"><%= feelsLike %>°C</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Humidity</span>
+                    <span class="detail-value"><%= humidity %>%</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Wind Speed</span>
+                    <span class="detail-value"><%= windSpeed %> m/s</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Pressure</span>
+                    <span class="detail-value"><%= pressure %> hPa</span>
+                </div>
+            </div>
+
+            <a href="/" class="back-btn">Search Another City</a>
+        </div>
+    </div>
+</body>
+</html>
