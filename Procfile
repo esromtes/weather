@@ -1,1 +1,1 @@
-web: node app_enhanced.js
+web: node app.js
