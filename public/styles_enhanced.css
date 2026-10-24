@@ -25,13 +25,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 15px;
 }
 
 .container {
-    width: 100%;
+    width: 90%;
     max-width: 450px;
     z-index: 1;
+    margin: 0 auto;
 }
 
 /* 3. The Weather Card (Enhanced Glassmorphism) */
@@ -249,22 +250,52 @@ button:active {
     to { opacity: 1; }
 }
 
-/* 10. Mobile Responsiveness */
-@media (max-width: 480px) {
+/* 10. Mobile & Tablet Responsiveness */
+@media (max-width: 768px) {
     .weather-card {
-        padding: 30px 20px;
+        padding: 40px 25px;
     }
     h1 {
-        font-size: 1.8rem;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+        align-items: flex-start; /* Better for long content on short screens */
+        padding-top: 40px;
+    }
+    .weather-card {
+        padding: 30px 20px;
+        border-radius: 30px;
+    }
+    h1 {
+        font-size: 1.6rem;
+    }
+    .search-form {
+        flex-direction: column;
+        gap: 10px;
+    }
+    button {
+        width: 100%;
     }
     .main-weather {
         flex-direction: column;
         text-align: center;
+        gap: 10px;
     }
     .temp-container {
         text-align: center;
     }
+    .temp-value {
+        font-size: 3rem;
+    }
     .weather-details {
         grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .city-name {
+        font-size: 2rem;
     }
 }
